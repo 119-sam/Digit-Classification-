@@ -1,11 +1,11 @@
-# 🧠 Digit Classification using Neural Networks
+# Digit Classification using Neural Networks
 
 ## 📌 Project Overview
 This project implements a **Neural Network-based digit classifier** using the **MNIST dataset**. The model is trained to recognize handwritten digits (0-9) with **high accuracy (97%)**, leveraging **deep learning techniques**.
 
 ---
 
-## 📂 Dataset Details
+##  Dataset Details
 The dataset used is **MNIST**, which consists of **grayscale handwritten digits** widely used in image classification.
 
 - **Training Samples:** 60,000  
@@ -16,7 +16,7 @@ The dataset used is **MNIST**, which consists of **grayscale handwritten digits*
 
 ---
 
-## ⚙️ Data Preprocessing
+##  Data Preprocessing
 The following preprocessing steps were applied before training:
 
 ✔ **Normalization:** Pixel values scaled to **[0,1]** for better convergence.  
@@ -25,7 +25,7 @@ The following preprocessing steps were applied before training:
 
 ---
 
-## 🏗️ Model Architecture
+##   Model Architecture
 The **Neural Network** consists of multiple layers optimized for digit classification.
 
 - **Input Layer:** `100 neurons`
@@ -38,13 +38,13 @@ The **Neural Network** consists of multiple layers optimized for digit classific
 
 ---
 
-## 📊 Model Performance
+##  Model Performance
 - **Accuracy Achieved:** `97%` on the test dataset  
 - **Loss Function Optimization:** Effectively minimized using **Categorical Cross-Entropy**
 
 ---
 
-## 🚀 Installation & Usage
+##  Installation & Usage
 
 ### 1️⃣ Clone the Repository
 ```bash
