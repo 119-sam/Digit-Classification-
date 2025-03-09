@@ -1,48 +1,52 @@
+# 🧠 Digit Classification using Neural Networks
 
-##📌 Project Overview
-This project implements a Neural Network-based digit classifier using the MNIST dataset. The model is designed to recognize handwritten digits (0-9) with high accuracy using deep learning techniques.
+## 📌 Project Overview
+This project implements a **Neural Network-based digit classifier** using the **MNIST dataset**. The model is trained to recognize handwritten digits (0-9) with **high accuracy (97%)**, leveraging **deep learning techniques**.
 
-By leveraging data preprocessing, optimized activation functions, and a well-structured neural network, this model achieves 97% accuracy, making it an efficient solution for digit recognition tasks.
+---
 
+## 📂 Dataset Details
+The dataset used is **MNIST**, which consists of **grayscale handwritten digits** widely used in image classification.
 
+- **Training Samples:** 60,000  
+- **Test Samples:** 10,000  
+- **Image Size:** 28x28 pixels  
+- **Number of Classes:** 10 (digits 0-9)  
+- **Dataset Source:** [Keras MNIST Dataset](https://keras.io/api/datasets/mnist/)
 
-##Dataset Details
-The dataset used is MNIST, which consists of grayscale handwritten digits. It is a standard benchmark dataset for image classification tasks in deep learning.
+---
 
-Training Samples: 60,000
-Test Samples: 10,000
-Image Size: 28x28 pixels
-Number of Classes: 10 (digits 0-9)
-Dataset Source: Keras MNIST Dataset
+## ⚙️ Data Preprocessing
+The following preprocessing steps were applied before training:
 
-##Data Preprocessing
-Before training the neural network, the following preprocessing steps were applied:
+✔ **Normalization:** Pixel values scaled to **[0,1]** for better convergence.  
+✔ **Reshaping:** Converted dataset into **flat vectors** for input processing.  
+✔ **One-Hot Encoding (Manhattan Coding):** Class labels transformed into categorical vectors.  
 
-✔ Normalization: Pixel values are scaled to the range [0,1] to improve convergence speed and performance.
+---
 
-✔ Reshaping: The dataset is reshaped into flat vectors to fit the input layer of the neural network.
+## 🏗️ Model Architecture
+The **Neural Network** consists of multiple layers optimized for digit classification.
 
-✔ One-Hot Encoding (Manhattan Coding): Class labels (0-9) are transformed into categorical vectors for multi-class classification.
+- **Input Layer:** `100 neurons`
+- **Hidden Layers:** `10 fully connected layers` (each with `100 neurons`)
+- **Activation Functions:**
+  - `ReLU` for hidden layers (introduces non-linearity)
+  - `Sigmoid` for the output layer (predicts class probabilities)
+- **Loss Function:** `Categorical Cross-Entropy`
+- **Optimizer:** `Adam`
 
- 
- 
- ##Model Architecture
-The Neural Network consists of multiple layers optimized for digit classification.
+---
 
-Input Layer: 100 neurons to process the flattened 28x28 image vectors
-Hidden Layers: 10 fully connected layers, each with 100 neurons
-Activation Functions:
-ReLU (Rectified Linear Unit) for hidden layers to introduce non-linearity
-Sigmoid for the output layer to predict probabilities for each class
-Loss Function: Categorical Cross-Entropy, used for multi-class classification
-Optimizer: Adam, known for its adaptive learning rate and efficiency in deep learning
- 
- 
- 
- ##Model Performance
-The trained model achieves:
+## 📊 Model Performance
+- **Accuracy Achieved:** `97%` on the test dataset  
+- **Loss Function Optimization:** Effectively minimized using **Categorical Cross-Entropy**
 
-Accuracy: 97% on the test dataset
-Loss Function Optimization: Converges effectively using Categorical Cross-Entropy
-The high accuracy demonstrates the efficiency of deep learning-based approaches for digit classification.
+---
 
+## 🚀 Installation & Usage
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/digit-classification-nn.git
+cd digit-classification-nn
